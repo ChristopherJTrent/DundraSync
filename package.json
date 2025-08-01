@@ -11,11 +11,13 @@
     "lint": "expo lint"
   },
   "dependencies": {
+    "@bufbuild/protobuf": "^2.6.2",
     "@expo/vector-icons": "^14.1.0",
     "@react-native-vector-icons/lucide": "^12.2.0",
     "@react-navigation/bottom-tabs": "^7.3.10",
     "@react-navigation/elements": "^2.3.8",
     "@react-navigation/native": "^7.1.6",
+    "@react-navigation/native-stack": "^7.3.10",
     "expo": "~53.0.20",
     "expo-blur": "~14.1.5",
     "expo-constants": "~17.1.7",
@@ -41,6 +43,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@bufbuild/buf": "^1.56.0",
+    "@bufbuild/protoc-gen-es": "^2.6.2",
     "@types/react": "~19.0.10",
     "eslint": "^9.25.0",
     "eslint-config-expo": "~9.2.0",

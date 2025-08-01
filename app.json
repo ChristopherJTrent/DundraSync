@@ -3,7 +3,7 @@
     "name": "DundraSync",
     "slug": "DundraSync",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/images/icon.png",
     "scheme": "dundrasync",
     "userInterfaceStyle": "automatic",
@@ -17,7 +17,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.anonymous.DundraSync"
+      "package": "net.arkevorkhat.DundraSync"
     },
     "web": {
       "bundler": "metro",
