@@ -7,12 +7,14 @@ type ViewStyles = {
 
 export const ViewStyleProps: ViewStyles = {
 	centeredFlexColumn: {
+		padding: 4,
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'center',
 		alignItems: 'center'
 	},
 	centeredFlexRow: {
+		padding: 4,
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'center',
