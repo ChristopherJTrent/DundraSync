@@ -4,8 +4,7 @@ import { mergeStyles } from '@/styles/util';
 import { ViewStyles } from '@/styles/Views';
 import Lucide from '@react-native-vector-icons/lucide';
 import { useState } from 'react';
-import { Button, Text, View, ViewStyle, StyleProp, TouchableHighlight, Modal, TextInput} from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { Button, Text, View, TouchableHighlight, Modal, TextInput} from 'react-native';
 
 
 
@@ -17,28 +16,29 @@ export default function ArmorClass() {
 	<View style = {mergeStyles(
 		ViewStyles.flexColumn, 
 		ViewStyles.justifyCenter, 
-		ViewStyles.alignCenter
+		ViewStyles.alignCenter,
+		{
+			height: 128
+		}
 	)}>
-
 		<Modal
 			animationType='fade'
 			transparent={true}
-
 			visible={modalOpen}
 			onRequestClose={() => setModalOpen(false)}
 		>
-				<View style={mergeStyles(
-					ViewStyles.flexColumn,
-					ViewStyles.alignCenter,
-					ViewStyles.justifyCenter,
-					{
-						position: 'fixed',
-						top: 0,
-						left: 0,
-						width: '100%',
-						height: '100%',
-						backgroundColor: '#000000A0'
-					})}>
+			<View style={mergeStyles(
+				ViewStyles.flexColumn,
+				ViewStyles.alignCenter,
+				ViewStyles.justifyCenter,
+				{
+					position: 'fixed',
+					top: 0,
+					left: 0,
+					width: '100%',
+					height: '100%',
+					backgroundColor: '#000000A0'
+			})}>
 				<View style={mergeStyles(
 					ViewStyles.flexColumn, 
 					ViewStyles.justifyCenter, 
@@ -80,8 +80,11 @@ export default function ArmorClass() {
 			top: 18
 		}}>{AC}</Text>
 		<TouchableHighlight 
-			hitSlop={16} 
-			onLongPress={() => {setModalOpen(true)}}
+			hitSlop={8} 
+			onLongPress={() => {
+				setNumber(AC.toString())
+				setModalOpen(true)
+			}}
 			underlayColor={'#000000AA'}>
 			<ShieldIcon/>
 		</TouchableHighlight>
