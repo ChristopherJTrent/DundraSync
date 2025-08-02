@@ -1,4 +1,4 @@
-package com.anonymous.DundraSync
+package net.arkevorkhat.DundraSync
 
 import android.app.Application
 import android.content.res.Configuration

@@ -1,4 +1,4 @@
-package com.anonymous.DundraSync
+package net.arkevorkhat.DundraSync
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build
