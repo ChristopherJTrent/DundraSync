@@ -11,7 +11,7 @@ export default function ArmorClass() {
 	<View style = {ViewStyleProps.centeredFlexColumn}>
 		<Text style={{
 			position: 'absolute', 
-			color: "#FFF", 
+			color: "#000", 
 			fontSize: 32, 
 			zIndex: 1,
 			top: 18

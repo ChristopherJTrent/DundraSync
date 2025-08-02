@@ -7,6 +7,7 @@ export const ShieldIcon = (props:any) => (
     width={72}
     height={72}
     viewBox="-2.5 0 34 34"
+	fill="none"
     {...props}
   >
     <Path
