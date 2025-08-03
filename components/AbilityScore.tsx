@@ -60,10 +60,15 @@ export function AbilityScore({
 						{
 							backgroundColor: 'white',
 							borderRadius: 16,
-
+							width: '20%',
+							height: '40%'
 						}
 					)}>
-						<TouchableHighlight onPress={() => setModalOpen(false)}>
+						<TouchableHighlight onPress={() => setModalOpen(false)} style={{
+							position: 'absolute',
+							top: 8,
+							right: 8,
+						}}>
 							<Lucide name='x' size={32} />
 						</TouchableHighlight>
 						<Text>Editing {name}</Text>
