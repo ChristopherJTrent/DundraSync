@@ -18,7 +18,7 @@ export default function ArmorClass() {
 		ViewStyles.justifyCenter, 
 		ViewStyles.alignCenter,
 		{
-			height: 128
+			height: 84
 		}
 	)}>
 		<Modal
@@ -88,16 +88,6 @@ export default function ArmorClass() {
 			underlayColor={'#000000AA'}>
 			<ShieldIcon/>
 		</TouchableHighlight>
-		<View style={ mergeStyles(
-			ViewStyles.flexRow,
-			ViewStyles.alignCenter,
-			ViewStyles.justifyCenter,
-			ViewStyles.marginTop(6),
-		)}>
-			<Button title='+1' onPress={() => setAC(AC + 1)}/>
-			<View style={{width: 6}} />
-			<Button title='-1' onPress={() => setAC(AC - 1)}/>
-		</View>
 	</View>
 	)
 }
